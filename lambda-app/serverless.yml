@@ -1,6 +1,6 @@
 service: my-first-lambda
 
-# enable required plugins, this is important
+# enable required plugins, in order to make what we want
 plugins:
   - serverless-webpack
   - serverless-offline
@@ -11,6 +11,7 @@ provider:
   name: aws
   runtime: nodejs8.10
   region: eu-central-1
+  stage: dev
 
 # here we describe our lambda function
 functions:
@@ -27,5 +28,5 @@ functions:
 custom:
   webpack:
     webpackConfig: 'webpack.config.js' # name of webpack configuration file
-    includeModules: false
+    includeModules: true # add excluded modules to the bundle
     packager: 'npm' # package manager we use
