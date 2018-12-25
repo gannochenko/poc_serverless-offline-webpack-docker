@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serverless offline start -r eu-central-1 --noTimeout --port 3010 --host 0.0.0.0"
   },
   "keywords": [],
   "author": "",
