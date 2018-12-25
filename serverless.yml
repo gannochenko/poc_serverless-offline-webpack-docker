@@ -20,7 +20,7 @@ functions:
     # in order to do so, we create a REST endpoint
     events:
       - http:
-          path: graphql # path for the endpoint
+          path: hello # path for the endpoint
           method: any # HTTP method for the endpoint, could be only 'post' or 'get', etc
           # cors: true
 
